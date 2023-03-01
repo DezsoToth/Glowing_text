@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000102;
+    background-image: url("beam-light-png-4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.glow-container {
+    display: flex;
+}
+
+h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8rem;
+    font-family: Sportrop;
+    font-weight: 500;
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px rgb(255, 0, 0),
+        0px 0px 20px rgba(255, 115, 0, .8),
+        0px 0px 40px rgba(255, 115, 0, .8),
+        0px 0px 80px rgba(255, 115, 0, .8);
+}
+
+h1:before {
+    content: attr(data-text);
+    position: absolute;
+    transform: scaleY(-1);
+    left: 0;
+    top: 0;
+    line-height: 1.3em;
+    transform-origin: bottom;
+    filter: blur(1px);
+    width: 100%;
+    background: linear-gradient(0deg, #ffffff 90%, transparent 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.box1 {
+    position: absolute;
+    animation: myanimation 3s linear infinite;
+    
+}
+
+@keyframes myanimation {
+    0%{color: red;}
+    25%{color: orange;}
+    50%{color: yellow;}
+    75%{color: orange;}
+    100%{color: red;}
