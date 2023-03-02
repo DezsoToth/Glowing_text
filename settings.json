@@ -1,0 +1,19 @@
+{
+  "files.autoSave": "afterDelay",
+  "workbench.colorTheme": "Community Material Theme Palenight High Contrast",
+  "workbench.iconTheme": "vscode-icons",
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "on",
+  "editor.fontFamily": "Ubuntu Mono",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveSassCompile.settings.formats": [
+  
+    
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": null,
+      "savePathReplacementPairs": null
+    }
+  ]
+}
